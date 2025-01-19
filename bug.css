@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue is that `float: left` can cause unexpected layout issues if not properly handled. If the parent element doesn't have a defined width, the floated elements might overlap or cause the parent to collapse.
