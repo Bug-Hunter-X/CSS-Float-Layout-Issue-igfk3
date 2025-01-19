@@ -1,0 +1,22 @@
+To solve the issue, use a clearfix hack to clear the floats.  Here's an example:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+
+/* clearfix hack */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Example Usage */
+<div class="clearfix">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+Alternatively, you can use flexbox or grid layout for more modern and predictable layout control.
